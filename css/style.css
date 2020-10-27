@@ -1,6 +1,7 @@
 /* Background properties */
-.bg-main-index {  
-    background-color: #86bbd8;
+.bg-main-index {
+    background: url('../img/bg-placeholder-temp3.jpg') no-repeat  fixed;  
+    background-color: #a2d7f3;
     background-size: cover;
     height: 100%;
     -webkit-background-size: cover;
@@ -71,6 +72,7 @@
 
 .navbar-toggler {
     outline: none !important;
+    justify-content: end;
 }
 
 .navbar-toggler-icon {
@@ -78,6 +80,23 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+@media (max-width : 768px) {
+    .navbar {
+        font-size: 80%;
+    }
+
+    .navbar-brand {
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        width: 9pc;
+        height: auto;
+    }
+}
+
+
 
 /* Navbar dropdown override style */
 .dropdown-menu {
